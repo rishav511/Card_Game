@@ -1,14 +1,14 @@
-from player import Player
+from player import Player1, Player2
 from draw_a_card import Deck
 
 def main():
     deck = Deck()
-    player1 = Player("Player 1")
-    player2 = Player("Player 2")
+    player1 = Player1("P1")
+    player2 = Player2("P2")
 
     while deck.is_deck_not_empty():
         face_value = deck.draw_a_card()
-        
+
         score1 = player1.random_choice()
         score2 = player2.same_as_face_value(face_value)
 
