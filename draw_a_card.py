@@ -1,17 +1,17 @@
 import random 
+class Deck:
+    def __init__(self):
+        self.deck = list(range(1, 14))
+        random.shuffle(self.deck)
 
-def is_deck_not_empty(deck: list[int]) -> bool :
-    return len(deck) != 0
+    def is_deck_not_empty(self) -> bool:
+        return len(self.deck) != 0
 
-def draw_a_card(deck: list[int]) -> int:
-    print (deck.pop(0))
-
-def main():
-    deck = deck = list(range(1,14))
-    random.shuffle(deck)
-    while is_deck_not_empty(deck):
-        draw_a_card((deck))
-
-if __name__ == "__main__":
-    main()
-
+    def draw_a_card(self) -> int:
+        if self.is_deck_not_empty():
+            card = self.deck.pop(0)
+            print(f"Card drawn: {card}")
+            return card
+        else:
+            print("Deck is empty.")
+            return -1
