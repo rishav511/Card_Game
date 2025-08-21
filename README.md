@@ -14,6 +14,37 @@ A simple, text-based card bidding game implemented in Python. Players compete by
 
 -   Python 3.x
 
+## Setup
+
+It is highly recommended to use a Python virtual environment to manage project dependencies and avoid conflicts with system-wide packages.
+
+1.  **Clone the repository (if you haven't already):**
+    ```bash
+    git clone <your-repo-url>
+    cd Card_Game
+    ```
+
+2.  **Create a virtual environment:**
+    On macOS and Linux:
+    ```bash
+    python3 -m venv venv
+    ```
+    On Windows:
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activate the virtual environment:**
+    On macOS and Linux:
+    ```bash
+    source venv/bin/activate
+    ```
+    On Windows:
+    ```bash
+    .\venv\Scripts\activate
+    ```
+    Your shell prompt should now be prefixed with `(venv)`.
+
 ## How to Play
 
 The game is run from the command line using `play_game.py`.
