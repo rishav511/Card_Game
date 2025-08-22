@@ -100,7 +100,7 @@ def main():
     winner, game_data = play_game(players)
     console.print(f"\n🏆 [bold green]{winner.name}[/bold green] wins with a score of [cyan]{winner.score:.2f}[/cyan]!")
 
-    analyze_performance(game_data, console)
+    analyze_performance(game_data)
 
 if __name__ == "__main__":
     main()
